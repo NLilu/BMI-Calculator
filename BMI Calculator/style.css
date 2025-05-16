@@ -225,7 +225,7 @@ input[type="text"] {
 
 .relative:focus {
   outline: none;
-  border: 2px solid var(--blue-500);
+  border: 1px solid var(--blue-500);
 }
 
 .metric_grid,
@@ -467,6 +467,10 @@ input[type="text"] {
   }
   .metric_units {
     display: none;
+  }
+
+  .bmi_grid {
+    gap: 10px;
   }
 
   .height_hidden,
