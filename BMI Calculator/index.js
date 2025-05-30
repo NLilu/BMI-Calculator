@@ -127,9 +127,9 @@ function displayBmi(bmi) {
   }
 
   resultDisplay.innerHTML = `${bmi.toFixed(1)}`;
-  if (metricCheck.checked) {
+  if (metricCheck.checked && bmi >= 18.5 && bmi < 25) {
     resultExplanation.innerHTML = `${interpretation}`;
-  } else if (imperialCheck.checked) {
+  } else if (imperialCheck.checked && bmi >= 18.5 && bmi < 25) {
     resultExplanation.innerHTML = `${interpretationImperial}`;
   } else {
     resultExplanation.innerHTML = `${interpretation}`;
